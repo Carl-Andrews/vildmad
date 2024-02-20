@@ -33,3 +33,33 @@ h3 {
 html {
   background-color: #062b3d;
 }
+
+/* mobil */
+@media (max-width: 800px) {
+  .h1_season {
+    font-family: "DM Serif Display", serif;
+    color: #ffd8ab;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 2%;
+  }
+  .grid_s1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .spring img,
+  .summer img,
+  .winter img {
+    width: 50%;
+    height: auto;
+  }
+  .spring,
+  .summer,
+  .winter {
+    text-align: center;
+    color: #ffd8ab;
+    margin-bottom: 5%;
+  }
+}

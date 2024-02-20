@@ -52,6 +52,7 @@ footer {
   padding: 2%;
   box-shadow: 0 -20px 72px rgba(0, 0, 0, 0.1);
   margin-top: 15%;
+  font-size: 100%;
 }
 .logo_footer img {
   width: 25%;
@@ -66,4 +67,23 @@ footer {
 }
 .kontakt {
   font-weight: 800;
+  font-size: 120%;
+}
+
+/* mobil */
+@media (max-width: 800px) {
+  .menu img {
+    width: 100%;
+    margin-right: 2%;
+  }
+  .heart {
+    margin-left: 76%;
+  }
+  .footer {
+    font-size: 70%;
+  }
+  .kontakt {
+    font-size: 100%;
+    font-weight: 600%;
+  }
 }
