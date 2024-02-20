@@ -1,0 +1,29 @@
+body{
+    background-color: #062B3D;
+    color: #FFD8AB;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+
+
+.biotop_img{
+    width: 100%;
+}
+
+.item_img{
+    width: 50%;
+    align-items: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid #062B3D;
+}
+
+.list_tittle{
+    text-align: center;
+}
+.tekst{
+    text-align: center;
+}
