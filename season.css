@@ -1,0 +1,35 @@
+/* grid på sæson side */
+.grid_s1 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  place-items: center;
+}
+.spring img,
+.summer img,
+.winter img {
+  width: 65%;
+  height: auto;
+}
+.spring,
+.summer,
+.winter {
+  text-align: center;
+  color: #ffd8ab;
+}
+
+/* design */
+.h1_season {
+  font-family: "DM Serif Display", serif;
+  color: #ffd8ab;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 350%;
+  margin-bottom: 2%;
+}
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: #ffd8ab;
+}
+html {
+  background-color: #062b3d;
+}

@@ -1,0 +1,69 @@
+/* fonte */
+.dm-serif display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* menu som er fra tidligere opgave i tema 5, men også fra det ekesmpel mikkel lagde ud-----------------------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: #062b3d;
+  box-shadow: 0 15px 33px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(2, auto);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+ul {
+  display: flex;
+  align-items: end;
+}
+
+/* sætter dem ved siden af hinanden fremfor ovenpå hinanden */
+.menu img {
+  width: 6%;
+  margin-right: 3%;
+}
+.heart {
+  margin-left: 80%;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  background-color: #062b3d;
+  color: #d9d9d9;
+  padding: 2%;
+  box-shadow: 0 -20px 72px rgba(0, 0, 0, 0.1);
+  margin-top: 15%;
+}
+.logo_footer img {
+  width: 25%;
+  height: auto;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  color: #ffd8ab;
+}
+.kontakt {
+  font-weight: 800;
+}
