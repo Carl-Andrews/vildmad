@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #062B3D;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd8ab;
+      font-size: 350%;
+      font-family: "DM Serif Display", serif;
+    }
+
+    #map-container {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 1200px;
+      margin-top: 50px;
+      background-image: url(IMG_3465.PNG);
+      background-size: 65% auto;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    .map-area {
+      position: absolute;
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      max-width: 100%;
+    }
+
+    .forest,
+    .beach,
+    .field,
+    .city {
+      width: 50px !important;
+      height: 50px !important;
+    }
+
+    .map-area img {
+      width: 50px;
+      height: 50px;
+      filter: brightness(0) invert(85%) sepia(100%) saturate(10000%) hue-rotate(180deg);
+      animation: pulse 1s infinite;
+    }
+
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .forest {
+      top: 100px;
+      left: 450px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .beach {
+      top: 565px;
+      left: 400px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .field {
+      top: 400px;
+      left: 560px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .city {
+      top: 520px;
+      left: 630px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .label {
+      position: absolute;
+      font-size: 14px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      pointer-events: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #map-container {
+        padding-bottom: 50%;
+        min-height: auto;
+        background-size: 55%;
+      }
+
+      .map-area {
+        width: 45%;
+        margin: 5px;
+      }
+
+      .map-area img {
+        width: 100%;
+        height: auto;
+      }
+
+      .label {
+        font-size: 12px;
+      }
+
+      .forest {
+        top: 50px;
+        left: 450px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .beach {
+        top: 480px;
+        left: 90px;
+        width: 180px;
+        height: 100px;
+      }
+
+      .field {
+        top: 270px;
+        left: 160px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .city {
+        top: 425px;
+        left: 270px;
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #ffd8ab;
+        font-size: 250%;
+        font-family: "DM Serif Display", serif;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Choose your location</h1>
+  <div id="map-container">
+    <div class="map-area forest" onclick="navigateTo('listview.html')" data-label="Forest">
+      <img src="skovikon.png" alt="Forest">
+    </div>
+  </div>
+  <div class="map-area beach" onclick="navigateTo('listview.html')" data-label="Beach">
+    <img src="vandikon.png" alt="Beach">
+  </div>
+  <div class="map-area field" onclick="navigateTo('listview.html')" data-label="Field">
+    <img src="landikon.png" alt="Field">
+  </div>
+
+  <div class="map-area city" onclick="navigateTo('listview.html')" data-label="City">
+    <img src="byikon.png" alt="City">
+  </div>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+
 </html>
