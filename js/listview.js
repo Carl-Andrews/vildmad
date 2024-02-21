@@ -33,10 +33,7 @@ const copy = template.cloneNode(true);
    copy.querySelector("h3").textContent = data.name;
    copy.querySelector("img").src= data.profile_picture;
    copy.querySelector("a").href = `singleview.html?id=${data.id}`;
-   {
-       // produktet er udsolgt
-       copy.querySelector("article").classList.add("soldOut");
-   }
+   
            //appende
    document.querySelector(".viewList-Container").appendChild(copy);
 }
