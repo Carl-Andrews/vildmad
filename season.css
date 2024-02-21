@@ -43,6 +43,12 @@ html {
   background-color: #062b3d;
 }
 
+.spring img,
+.summer img,
+.winter img:hover {
+  cursor: pointer;
+}
+
 /* mobil */
 @media (max-width: 800px) {
   .h1_season {
@@ -64,6 +70,7 @@ html {
     width: 50%;
     height: auto;
   }
+
   .spring,
   .summer,
   .winter {
