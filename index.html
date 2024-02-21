@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Map</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header_footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -61,6 +61,8 @@
       filter: brightness(0) invert(85%) sepia(100%) saturate(10000%) hue-rotate(180deg);
       animation: pulse 1s infinite;
     }
+
+
 
 
     @keyframes pulse {
@@ -174,6 +176,19 @@
 </head>
 
 <body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <div class="logo_css">
+          <img src="logo.svg" alt="logo">
+        </div>
+      </a>
+    </div>
+    <ul class="menu">
+      <img src="heart.png" class="heart" alt="heart">
+      <img src="profile.png" class="profile" alt="profile">
+    </ul>
+  </header>
   <h1>Choose your location</h1>
   <div id="map-container">
     <div class="map-area forest" onclick="navigateTo('listview.html')" data-label="Forest">
@@ -196,19 +211,6 @@
       window.location.href = page;
     }
   </script>
-</body>
-
-</html>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style" />
-</head>
-
-<body>
-  <script src="/js/script.js"></script>
 </body>
 
 </html>
