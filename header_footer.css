@@ -51,11 +51,11 @@ ul {
   margin-right: 120%;
 }
 
-/* anchortag på ikoner i header */
-a {
+/* anchortag på ikoner i header (giv class til ikoner), ellers rykkes alle link*/
+/* a {
   margin-right: 75%;
   margin-left: -55%;
-}
+} */
 
 /* footer */
 footer {

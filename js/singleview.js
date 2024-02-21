@@ -22,6 +22,9 @@ function showData(items) {
         const item = items[0]; // Assuming you're expecting only one item
         document.querySelector(".list_tittle").textContent = item.name;
         document.querySelector(".tekst").textContent = item.description;
+        document.querySelector(".biotop").textContent = item.biotope;
+        document.querySelector(".maeneder").textContent = item.month;
+        document.querySelector(".type").textContent = item.categori;
         document.querySelector(".biotop_img").src = item.biotope_img;
         document.querySelector(".item_img").src = item.profile_picture;
     } else {
