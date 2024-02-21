@@ -15,7 +15,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5%;
+  padding: 0%;
   background-color: #062b3d;
   box-shadow: 0 15px 33px rgba(0, 0, 0, 0.1);
   grid-template-columns: repeat(2, auto);
@@ -24,7 +24,7 @@ header {
   z-index: 100;
 }
 .logo img {
-  width: 12%;
+  width: 8%;
   height: auto;
 }
 ul {
@@ -39,7 +39,6 @@ ul {
 /* sætter dem ved siden af hinanden fremfor ovenpå hinanden */
 
 .heart {
-  margin-bottom: 3%;
   width: 50px;
 }
 .profile {
