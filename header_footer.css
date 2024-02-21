@@ -26,6 +26,7 @@ header {
 .logo img {
   width: 8%;
   height: auto;
+  margin-left: 2%;
 }
 ul {
   display: flex;
@@ -35,6 +36,7 @@ ul {
   place-items: center;
   gap: 10px;
   list-style: none;
+  margin-right: 5%;
 }
 
 /* sætter dem ved siden af hinanden fremfor ovenpå hinanden */
