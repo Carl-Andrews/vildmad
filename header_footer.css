@@ -44,8 +44,15 @@ ul {
 }
 .profile {
   margin-bottom: 3%;
-  margin-left: 5%;
+  margin-left: 55%;
   width: 50px;
+  margin-right: 120%;
+}
+
+/* anchortag på ikoner i header */
+a {
+  margin-right: 75%;
+  margin-left: -55%;
 }
 
 /* footer */
@@ -100,5 +107,11 @@ footer {
     font-size: 100%;
     font-weight: 600%;
     margin-right: 57.5%;
+  }
+
+  /* anchortag på ikoner i header */
+  a {
+    margin-right: 30%;
+    margin-left: -15%;
   }
 }
