@@ -7,6 +7,11 @@ h4 {
   font-size: 2rem;
 }
 
+h2 {
+  text-align: center;
+  font-size: 250%;
+}
+
 .biotop_img {
   grid-column: 1;
   grid-row: 1;
@@ -24,16 +29,42 @@ h4 {
   margin-top: 30%;
   opacity: 90%;
 }
-@media (max-width: 800px) {
-.list_tittle {
-  text-align: center;
-}
-}
 .tekst {
-  text-align: center;
+  text-align: left;
   max-width: 75ch;
+  margin-left: 20%;
 }
 .container {
   grid-template-columns: 1fr;
   display: grid;
+}
+p {
+  font-family: "Raleway", sans-serif;
+  line-height: 150%;
+}
+.single,
+.biotop,
+.maeneder,
+.type {
+  margin-left: 20%;
+}
+
+@media (max-width: 800px) {
+  .list_tittle {
+    text-align: center;
+  }
+  .tekst {
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 13%;
+  }
+  .single,
+  .biotop,
+  .maeneder,
+  .type {
+    margin-left: 8%;
+  }
+  h2 {
+    font-size: 200%;
+  }
 }
