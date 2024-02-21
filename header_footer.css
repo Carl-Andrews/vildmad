@@ -15,7 +15,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5%;
+  padding: 0%;
   background-color: #062b3d;
   box-shadow: 0 15px 33px rgba(0, 0, 0, 0.1);
   grid-template-columns: repeat(2, auto);
@@ -24,7 +24,7 @@ header {
   z-index: 100;
 }
 .logo img {
-  width: 12%;
+  width: 8%;
   height: auto;
 }
 ul {
@@ -34,18 +34,25 @@ ul {
   justify-content: space-evenly;
   place-items: center;
   gap: 10px;
+  list-style: none;
 }
 
 /* sætter dem ved siden af hinanden fremfor ovenpå hinanden */
 
 .heart {
-  margin-bottom: 3%;
   width: 50px;
 }
 .profile {
   margin-bottom: 3%;
-  margin-left: 5%;
+  margin-left: 55%;
   width: 50px;
+  margin-right: 120%;
+}
+
+/* anchortag på ikoner i header */
+a {
+  margin-right: 75%;
+  margin-left: -55%;
 }
 
 /* footer */
@@ -100,5 +107,11 @@ footer {
     font-size: 100%;
     font-weight: 600%;
     margin-right: 57.5%;
+  }
+
+  /* anchortag på ikoner i header */
+  a {
+    margin-right: 30%;
+    margin-left: -15%;
   }
 }
