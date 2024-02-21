@@ -15,7 +15,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2%;
+  padding: 0.5%;
   background-color: #062b3d;
   box-shadow: 0 15px 33px rgba(0, 0, 0, 0.1);
   grid-template-columns: repeat(2, auto);
@@ -24,21 +24,28 @@ header {
   z-index: 100;
 }
 .logo img {
-  width: 50px;
+  width: 12%;
   height: auto;
 }
 ul {
   display: flex;
   align-items: end;
+  margin: 0;
+  justify-content: space-evenly;
+  place-items: center;
+  gap: 10px;
 }
 
 /* sætter dem ved siden af hinanden fremfor ovenpå hinanden */
-.menu img {
-  width: 6%;
-  margin-right: 3%;
-}
+
 .heart {
-  margin-left: 80%;
+  margin-bottom: 3%;
+  width: 50px;
+}
+.profile {
+  margin-bottom: 3%;
+  margin-left: 5%;
+  width: 50px;
 }
 
 /* footer */
@@ -49,14 +56,15 @@ footer {
   font-family: "Raleway", sans-serif;
   background-color: #062b3d;
   color: #d9d9d9;
-  padding: 2%;
+  padding: 0.5%;
   box-shadow: 0 -20px 72px rgba(0, 0, 0, 0.1);
-  margin-top: 15%;
+  margin-top: 10%;
   font-size: 100%;
 }
 .logo_footer img {
-  width: 25%;
+  width: 20%;
   height: auto;
+  margin-left: 2%;
 }
 .footer {
   display: flex;
@@ -64,26 +72,33 @@ footer {
   justify-content: space-between;
   list-style: none;
   color: #ffd8ab;
+  margin-right: 2%;
 }
 .kontakt {
   font-weight: 800;
   font-size: 120%;
+  margin-right: 54.5%;
 }
 
 /* mobil */
 @media (max-width: 800px) {
   .menu img {
-    width: 100%;
     margin-right: 2%;
+    margin-left: 0;
+    width: 41px;
   }
-  .heart {
-    margin-left: 76%;
+
+  .logo img {
+    width: 20%;
+    height: auto;
   }
+
   .footer {
     font-size: 70%;
   }
   .kontakt {
     font-size: 100%;
     font-weight: 600%;
+    margin-right: 57.5%;
   }
 }
