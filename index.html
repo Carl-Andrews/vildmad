@@ -18,7 +18,18 @@
       background-color: #062B3D;
     }
 
+    header {
+      position: relative;
+      z-index: 2;
+    }
+
+    ul {
+      list-style: none;
+    }
+
     h1 {
+      position: relative;
+      z-index: 3;
       text-align: center;
       color: #ffd8ab;
       font-size: 350%;
@@ -26,25 +37,21 @@
     }
 
     #map-container {
-      position: absolute;
-      top: 5%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 800px;
-      height: 1200px;
-      margin-top: 50px;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100vh;
       background-image: url(IMG_3465.PNG);
-      background-size: 65% auto;
+      background-size: contain;
       background-repeat: no-repeat;
-      background-position: center top;
+      background-position: center;
+
     }
 
     .map-area {
       position: absolute;
       cursor: pointer;
-      width: 10px;
-      height: 10px;
-      max-width: 100%;
+      z-index: 4;
     }
 
     .forest,
@@ -62,9 +69,6 @@
       animation: pulse 1s infinite;
     }
 
-
-
-
     @keyframes pulse {
       0% {
         transform: scale(1);
@@ -80,96 +84,57 @@
     }
 
     .forest {
-      top: 100px;
-      left: 450px;
-      width: 100px;
-      height: 100px;
+      top: 10%;
+      left: 45%;
     }
 
     .beach {
-      top: 565px;
-      left: 400px;
-      width: 100px;
-      height: 100px;
+      top: 70%;
+      left: 35%;
     }
 
     .field {
-      top: 400px;
-      left: 560px;
-      width: 100px;
-      height: 100px;
+      top: 35%;
+      left: 40%;
     }
 
     .city {
-      top: 520px;
-      left: 630px;
-      width: 100px;
-      height: 100px;
-    }
-
-    .label {
-      position: absolute;
-      font-size: 14px;
-      font-weight: bold;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      pointer-events: none;
+      top: 50%;
+      left: 65%;
     }
 
     @media only screen and (max-width: 768px) {
-      #map-container {
-        padding-bottom: 50%;
-        min-height: auto;
-        background-size: 55%;
-      }
-
-      .map-area {
-        width: 45%;
-        margin: 5px;
-      }
-
-      .map-area img {
-        width: 100%;
-        height: auto;
-      }
-
-      .label {
-        font-size: 12px;
-      }
-
       .forest {
-        top: 50px;
-        left: 450px;
-        width: 100px;
-        height: 100px;
+        width: 20%;
+        height: auto;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       .beach {
-        top: 480px;
-        left: 90px;
-        width: 180px;
-        height: 100px;
+        width: 20%;
+        height: auto;
+        top: 70%;
+        left: 25%;
       }
 
       .field {
-        top: 270px;
-        left: 160px;
-        width: 100px;
-        height: 100px;
+        width: 20%;
+        height: auto;
+        top: 35%;
+        left: 35%;
       }
 
       .city {
-        top: 425px;
-        left: 270px;
-        width: 100px;
-        height: 100px;
+        width: 20%;
+        height: auto;
+        top: 50%;
+        left: 70%;
       }
 
       h1 {
-        text-align: center;
-        color: #ffd8ab;
         font-size: 250%;
-        font-family: "DM Serif Display", serif;
       }
     }
   </style>
@@ -185,8 +150,8 @@
       </a>
     </div>
     <ul class="menu">
-      <img src="heart.png" class="heart" alt="heart">
-      <img src="profile.png" class="profile" alt="profile">
+      <li><img src="heart.png" class="heart" alt="heart"></li>
+      <li><img src="profile.png" class="profile" alt="profile"></li>
     </ul>
   </header>
   <h1>Choose your location</h1>
@@ -194,17 +159,36 @@
     <div class="map-area forest" onclick="navigateTo('listview.html')" data-label="Forest">
       <img src="skovikon.png" alt="Forest">
     </div>
+    <div class="map-area beach" onclick="navigateTo('listview.html')" data-label="Beach">
+      <img src="vandikon.png" alt="Beach">
+    </div>
+    <div class="map-area field" onclick="navigateTo('listview.html')" data-label="Field">
+      <img src="landikon.png" alt="Field">
+    </div>
+    <div class="map-area city" onclick="navigateTo('listview.html')" data-label="City">
+      <img src="byikon.png" alt="City">
+    </div>
   </div>
-  <div class="map-area beach" onclick="navigateTo('listview.html')" data-label="Beach">
-    <img src="vandikon.png" alt="Beach">
-  </div>
-  <div class="map-area field" onclick="navigateTo('listview.html')" data-label="Field">
-    <img src="landikon.png" alt="Field">
-  </div>
-
-  <div class="map-area city" onclick="navigateTo('listview.html')" data-label="City">
-    <img src="byikon.png" alt="City">
-  </div>
+  <footer>
+    <div class="logo_footer">
+      <a href="index.html">
+        <div class="logo_css_footer">
+          <img src="logo.svg" alt="logo">
+        </div>
+      </a>
+    </div>
+    <ul class="footer">
+      <li class="kontakt">Kontakt</li>
+      <li>Mikkel-Lau Mikkelsen
+        <br>
+        Projektleder, MAD
+        <br>
+        +45 26 35 00 17
+        <br>
+        mm@madfeed.com
+      </li>
+    </ul>
+  </footer>
 
   <script>
     function navigateTo(page) {
