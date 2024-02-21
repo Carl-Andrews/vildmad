@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'spring',
         'summer',
         'winter',
-        "fall"
+
       ];
       const category = categories[index];
       window.location.href = `listview.html?Urlinfo=${category}`;

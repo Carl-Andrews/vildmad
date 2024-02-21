@@ -20,9 +20,9 @@ h2{
 
 }
   .productitem a{ 
-    font-size: 10px;
+    font-size: 13px;
     width: 70%;
-    color: salmon;
+    color: rgb(234, 156, 147);
         text-decoration: none;
 }
 .productitem p{ 
